@@ -1,0 +1,66 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clarion Ecom</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="shortcut icon" href="./assets/images/logo-square.png" type="image/png"/>
+    <link rel="icon" href="./assets/images/logo-square.png" type="image/png"/>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/assets/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+
+<body>
+    <div class="overlay-mask"></div>
+    <div class="main-wrapper @@menuVariant">
+        <div class="main-content container-fluid h-100 bg-primary">
+            <div class="row h-100">
+                <div class="col-10 col-sm-8 col-md-6 col-lg-4 col-xl-3 m-auto px-3 pt-5 pb-4 card shadow m-3">
+                    <img src="~/assets/images/dark.png" height="50" alt="Moss Logo" class="logo justify-content-center d-flex mx-auto mb-3"/>
+                    <div class="p-3" method="post">
+                        <div class="form-group">
+                            <input type="text" name="email" class="form-control" placeholder="Email" id="txtEmail" />
+                        </div>
+                        <div class="form-group">
+                            <input type="password" name="password" class="form-control" placeholder="Password" id="txtPassword"/>
+                        </div>
+                        <button class="btn btn-primary btn-block my-4" id="btnSignIn">
+                            Login
+                        </button>
+                        <hr>
+                        <a href="javascript:void(0);" class="d-block text-center">Forgot Password ?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="toast text-white toast-left" id="toastWindow" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header text-white toast-icon-sp">
+            <i class="fas fa-info-circle"></i>
+            <strong class="me-auto" id="tstTitle">Ecomm</strong>
+            <small></small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body text-white" id="tstMessage">
+            Hello, world! This is a toast message.
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="~/js/pages/login.js" type="text/javascript"></script>
+    @* <script src="~/assets/js/vendor-bundle.js"></script> *@
+  
+</body>
+</html>
+
+
+@section scripts {
+
+}

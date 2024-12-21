@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>@ViewData["Title"] - Clarion Ecom</title>
+    <link href="~/assets/css/style.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="~/assets/images/logo-square.png" type="image/png">
+    <link rel="icon" href="~/assets/images/logo-square.png" type="image/png">
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/lib/fontawesome-6-5-2-web/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.23.1/apexcharts.min.css">
+    <link href="~/lib/datatables/datatables.min.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="overlay-mask"></div>
+    <div class="main-wrapper">
+
+        <partial name="_menu.cshtml" />
+
+        <div class="right-area">
+
+            <partial name="_header.cshtml" />
+
+            <div class="main-content">
+                <main role="main" class="pb-3">
+                     @RenderBody()
+                </main>
+               
+            </div>
+           @*  <footer class="border-top footer text-muted">
+                <div class="container">
+                    <strong>Powered by</strong> <a href="http://clarioninfotech.com" target="_blank">Clarion Infotech</a> &copy; @DateTime.Now.Year.ToString()
+                </div>
+            </footer> *@
+        </div>
+    </div>
+
+    <div class="toast text-white toast-left" id="toastWindow" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header text-white toast-icon-sp">
+            <i class="fas fa-info-circle"></i>
+            <strong class="me-auto" id="tstTitle">Ecomm</strong>
+            <small></small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body text-white" id="tstMessage">
+            Hello, world! This is a toast message.
+        </div>
+    </div>
+ 
+  
+   @*<script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script> *@
+
+    <script src="~/assets/js/vendor-bundle.js"></script>
+    <script src="~/assets/js/app.bundle.js"></script>
+    <script src="~/assets/js/screenfull.min.js"></script>
+    <script src="~/js/common.js"></script>
+    <script src="~/lib/datatables/datatables.min.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

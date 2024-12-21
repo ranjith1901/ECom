@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clarion.Ecom.API", "Clarion.Ecom.API\Clarion.Ecom.API.csproj", "{D432EC1C-1BB0-422D-B65C-C332CB3DBA39}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clarion.Ecom.Web", "Clarion.Ecom.Web\Clarion.Ecom.Web.csproj", "{C51EFC62-42A5-421F-B49D-F5DE4A9BF8BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D432EC1C-1BB0-422D-B65C-C332CB3DBA39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D432EC1C-1BB0-422D-B65C-C332CB3DBA39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D432EC1C-1BB0-422D-B65C-C332CB3DBA39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D432EC1C-1BB0-422D-B65C-C332CB3DBA39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C51EFC62-42A5-421F-B49D-F5DE4A9BF8BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C51EFC62-42A5-421F-B49D-F5DE4A9BF8BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C51EFC62-42A5-421F-B49D-F5DE4A9BF8BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C51EFC62-42A5-421F-B49D-F5DE4A9BF8BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2ACBE282-454C-43A6-999D-A5D4361513F4}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,54 @@
+﻿@{
+    ViewData["Title"] = "Add";
+    <link href="~/assets/css/style.css" rel="stylesheet" />
+}
+
+<div class="row wrapper white-bg page-heading">
+
+    <div class="card shadow" style="margin-top: 0px;">
+        <div class="card-body" style="display: flex;">
+            <div class="col-lg-11">
+                <div class="page-header" style="margin-top: 5px;margin-left:-15px;">
+                    <span class="h2">Travel Type</span>
+                </div>
+            </div>
+           <div class="col-lg-1">
+                <span class="tooltip-demo preview-grp float-right" style="margin-top: 5px;">
+                    <span class="fs17" style="cursor: pointer;" data-toggle="tooltip" data-placement="bottom" title="Back to search" onclick="backToSearch('@Url.Action("Index","TravelType")')"> <i class="fa fa-undo"></i> </span>
+                </span>
+           </div>
+        </div>
+    </div>
+
+    <div class="card shadow">
+        <div class="card-header bg-white">
+            <span class="h2"><i class="fa fa-plus"></i>&nbsp; Add Travel Type</span>
+        </div>
+        <div class="card-body">
+            <form autocomplete="off">
+                <div class="row">
+                    <span class="col-12" style="text-align:end;"><strong><span class="lblMandatory">*</span></strong> Required Fields</span>
+                </div>
+                <div class="form-group row">
+                    <label class="col-lg-2 col-form-label text-right"><strong>Travel Type </strong>&nbsp;<span class="lblMandatory">*</span></label>
+                    <div class="col-lg-3"><input type="text" placeholder="" class="form-control" id="txtTravelTypeName" /></div>
+                </div>
+                <div class="form-group row" style="margin-top:20px;">
+                    <div class="btn-list col-lg-8">
+                        <button class="btn btn-primary col-2" id="btnSave" type="button"><i class="fa fa-save"></i>&nbsp;&nbsp;Save</button>
+                        <button class="btn btn-danger col-2" id="btnClear" type="button"><i class="fa fa-times-circle"></i>&nbsp;&nbsp;Cancel</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+<input type="hidden" class="form-control" value="0" id="hdnTravelTypeID" />
+
+@section Scripts {
+ 
+    <script src="~/js/pages/traveltype.js" type="text/javascript"></script>
+   
+}

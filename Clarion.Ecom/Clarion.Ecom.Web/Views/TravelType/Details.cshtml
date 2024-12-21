@@ -1,0 +1,68 @@
+﻿@{
+    ViewData["Title"] = "Details";
+    <link href="~/assets/css/style.css" rel="stylesheet" />
+}
+
+<div class="row wrapper white-bg page-heading">
+
+    <div class="card shadow" style="margin-top: 0px;">
+        <div class="card-body" style="display: flex;">
+            <div class="col-lg-9">
+                <div class="page-header" style="margin-top: 5px;margin-left:-15px;">
+                    <span class="h2">Travel Type</span>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="float-right">
+                    <span class="tooltip-demo preview-grp">
+                       @*  <span class="actionPreview" style="cursor: pointer;" onclick="previewAttendance();"><i class="fa fa-angle-double-left"></i>&nbsp;<span class="fs13">Previous</span></span>
+                        <input type="number" id="txtRecordIndex" step="1" min="1" max="0" value="0" class="page-input" onchange="changedAttendance(value);" />
+                        <span class="actionNext" style="cursor: pointer;" onclick="nextAttendance();"><span class="fs13">Next</span> &nbsp;<i class="fa fa-angle-double-right"></i></span>&nbsp;&nbsp; *@
+                        <a class="fs17" style="cursor: pointer;" data-toggle="tooltip" data-placement="bottom" title="Back to search" asp-action="Index" asp-controller="TravelType"> <i class="fa fa-undo"></i> </a>
+                    </span>
+                </div>
+              @*   <span class="tooltip-demo preview-grp float-right" style="margin-top: 5px;">
+                    <span class="fs17" style="cursor: pointer;" data-toggle="tooltip" data-placement="bottom" title="Back to search" onclick="backToSearch('@Url.Action("Index","TravelType")')"> <i class="fa fa-undo"></i> </span>
+                </span> *@
+            </div>
+        </div>
+    </div>
+
+    <div class="card shadow">
+        <div class="card-header bg-white">
+            <span class="h2"><i class="fa fa-eye"></i>&nbsp; Details</span>
+        </div>
+        <div class="card-body">
+
+            <div class="row">
+                <label class="col-lg-2 col-form-label text-right"><strong>Travel Type :</strong></label>
+                <div class="col-lg-3 col-form-label"><span id="lblTravelTypeName"></span></div>
+            </div>
+            <div class="row">
+                <label class="col-lg-2 col-form-label text-right"><strong>Traval Type Status :</strong></label>
+                <div class="col-lg-3 col-form-label"><span id="lblTravelTypeStatus"></span></div>
+            </div>
+           
+            <div class="form-group row" style="margin-top:20px;">
+                <div class="btn-list col-lg-8">
+                    <span id="btnActive">
+                        <button class="btn btn-primary col-2" onclick="editTravelType(0);" type="button"><i class="fa fa-save"></i>&nbsp;&nbsp;Edit</button>
+                        <button class="btn btn-primary col-2" onclick="updateStatus(1);" type="button"><i class="fa fa-power-off"></i>&nbsp;&nbsp;Deactivate</button>
+                    </span>
+                    <span id="btnDeactive">
+                        <button class="btn btn-primary col-2" onclick="updateStatus(0);" type="button"><i class="fa fa-save"></i>&nbsp;&nbsp;Activate</button>
+                  </span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<input type="hidden" class="form-control" value="0" id="hdnTravelTypeID" />
+
+@section Scripts {
+
+    <script src="~/js/pages/traveltype.js" type="text/javascript"></script>
+}

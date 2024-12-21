@@ -1,0 +1,62 @@
+﻿<aside class="sidebar">
+    <nav class="navbar">
+        <a class="navbar-brand brand-title" href="#">
+            <img src="~/assets/images/light.png" alt="" class="logo"> ECommerce
+        </a>
+    </nav>
+    <nav class="navigation shadow-sm">
+        <div class="navigation-arrow">
+            <i class="material-icons">chevron_left</i>
+        </div>
+        <ul>
+            <li>
+                <a asp-action="Dashboard" asp-controller="Home" class="@@if(active == 'dashboard') {active}">
+                    <span class="icon material-icons">book_online</span>
+                    <span class="text">Dashboard</span>
+                </a>
+            </li>
+          
+            <li>
+                <a href="#menuAdmins" class="" data-toggle="collapse">
+                    <span class="caret material-icons">arrow_right</span>
+                    <span class="icon material-icons">apps</span>
+                    <span class="text">Administration</span>
+                </a>
+                <ul class="collapse" id="menuAdmins">
+                    <li>
+                        <a id="mnuTravelType" asp-action="Index" asp-controller="TravelType" class="@@if(active == 'mnuTravelType') {active}">
+                            <span class="icon material-icons">remove</span>
+                            <span class="text">Travel Type</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="kanban.html" class="@@if(active == 'kanban') {active}">
+                            <span class="icon material-icons">remove</span>
+                            <span class="text">Duration</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contacts.html" class="@@if(active == 'contacts') {active}">
+                            <span class="icon material-icons">remove</span>
+                            <span class="text">Destination</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contacts.html" class="@@if(active == 'contacts') {active}">
+                            <span class="icon material-icons">remove</span>
+                            <span class="text">Destination Details</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+           
+
+
+          
+        </ul>
+        <div class="navigation-arrow right">
+            <i class="material-icons">chevron_right</i>
+        </div>
+    </nav>
+</aside>
+
